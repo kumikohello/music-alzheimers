@@ -67,6 +67,12 @@ python3 -m http.server 8080
 
 Then open `http://127.0.0.1:8080/` in a browser. Use `index.html` at the root or follow in-app navigation.
 
+### GitHub Pages
+
+The repository ships with **`.github/workflows/deploy-pages.yml`**, which publishes only `index.html`, `style.css`, `script.js`, and `.nojekyll`. In GitHub: **Settings → Pages → Source: GitHub Actions**. The live URL is shown after the first successful workflow run (project sites use `https://<user>.github.io/<repo>/`).
+
+**Alternative (no Actions):** In **Settings → Pages**, choose **Deploy from a branch**, branch **main**, folder **`/ (root)`**. Keep **`.nojekyll`** in the root so GitHub does not treat the site as a Jekyll project. That publishes the whole branch (including `.cursor` if it is tracked); prefer the workflow if you want a minimal public tree.
+
 **Alternative (Node):**
 
 ```bash
