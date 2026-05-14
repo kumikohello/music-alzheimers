@@ -1,6 +1,6 @@
 # Music, Memory & Alzheimer’s — Website Documentation
 
-This document describes the static multi-page site built from the product spec at `.cursor/prompts/music_therapy_website_prompt.md`. All build notes, file map, and local run instructions live under `.cursor` as requested.
+This document describes the static single-page site built from the product spec at `.cursor/prompts/music_therapy_website_prompt.md`. Maintainer-facing notes (file map, deployment, run instructions) live here rather than in the root `README.md`.
 
 ---
 
@@ -61,7 +61,7 @@ From the repository root (`music-alzheimers`), serve static files with any HTTP 
 **Python 3 (recommended):**
 
 ```bash
-cd /Users/kumikoueda/GitHub/music-alzheimers
+cd <repository-root>
 python3 -m http.server 8080
 ```
 

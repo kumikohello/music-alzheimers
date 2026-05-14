@@ -1,4 +1,4 @@
-# Publish only the static site files (not .cursor or other repo content) to GitHub Pages.
+# Publish only the static site files at repo root (minimal bundle) to GitHub Pages.
 # After merge: Repository → Settings → Pages → Build and deployment → Source: GitHub Actions.
 
 name: Deploy GitHub Pages

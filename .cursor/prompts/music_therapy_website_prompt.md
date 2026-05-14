@@ -1,4 +1,4 @@
-# Cursor Prompt: Music, Memory & Alzheimer's Disease — Public Education Website
+# Music, Memory & Alzheimer's Disease — Public education website (internal brief)
 
 ## Project Overview
 
