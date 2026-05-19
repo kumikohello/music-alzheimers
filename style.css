@@ -268,46 +268,37 @@ a:focus-visible {
   background: linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg-deep) 100%);
 }
 
-.page-hero {
-  padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(2rem, 5vw, 3rem);
-}
-
-.page-hero--light {
-  background: var(--bg-light);
-  color: var(--text-on-light);
+.section--light.section--tight > .content-wrap > .page-hero__label:first-child {
+  padding-top: clamp(2.5rem, 6vw, 4rem);
 }
 
 .page-hero__label {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: var(--accent);
+  color: #9a7328;
   margin: 0 0 0.75rem;
 }
 
-.page-hero--light .page-hero__label {
-  color: #9a7328;
-}
-
-.page-hero h1,
 .page-hero__title {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(2rem, 5vw, 2.85rem);
   line-height: 1.15;
-  margin: 0 0 1rem;
+  margin: 0;
   letter-spacing: -0.02em;
+  color: var(--text-on-light);
 }
 
-.page-hero p {
-  margin: 0;
+.section--light .content-wrap > .page-hero__title + p {
+  margin: 1rem 0 0;
   max-width: 36rem;
-  color: var(--text-muted);
+  color: var(--text-on-light-muted);
   font-size: 1.1rem;
 }
 
-.page-hero--light p {
-  color: var(--text-on-light-muted);
+.page-hero__title + h3 {
+  margin-top: clamp(1.5rem, 4vw, 2.25rem);
 }
 
 /* ——— Home hero ——— */
