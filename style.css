@@ -270,13 +270,11 @@ a:focus-visible {
 
 .page-hero {
   padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(2rem, 5vw, 3rem);
-  border-bottom: 1px solid var(--border-subtle);
 }
 
 .page-hero--light {
   background: var(--bg-light);
   color: var(--text-on-light);
-  border-bottom-color: rgba(26, 26, 31, 0.08);
 }
 
 .page-hero__label {
