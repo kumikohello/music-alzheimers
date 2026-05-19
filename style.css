@@ -249,6 +249,16 @@ a:focus-visible {
   color: var(--text-on-light);
 }
 
+/* Faint rule between major sections */
+main > section[id]:not(#intro) {
+  border-top: 1px solid rgba(242, 235, 227, 0.12);
+}
+
+main > section[id]:not(#intro):has(.section--light),
+main > section#references {
+  border-top-color: rgba(26, 26, 31, 0.08);
+}
+
 .section--divider::before {
   content: "";
   display: block;
