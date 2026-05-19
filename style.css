@@ -520,6 +520,12 @@ p:last-child {
 }
 
 /* ——— Brain figure ——— */
+.brain-figure-wrap {
+  --brain-wide: min(100vw - 2.5rem, 52rem);
+  width: var(--brain-wide);
+  margin-inline: calc((100% - var(--brain-wide)) / 2);
+}
+
 .brain-figure {
   margin: 2.5rem 0 0;
   padding: 1.5rem;
@@ -535,15 +541,8 @@ p:last-child {
 
 .brain-figure__layout {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
   align-items: start;
-}
-
-@media (min-width: 720px) {
-  .brain-figure__layout {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
 }
 
 .brain-figure figcaption {
@@ -559,13 +558,14 @@ p:last-child {
 }
 
 .brain-figure__media {
-  display: flex;
-  justify-content: center;
+  display: block;
+  width: 100%;
 }
 
 .brain-figure__img {
+  display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: none;
   height: auto;
   border-radius: 6px;
   border: 1px solid rgba(26, 26, 31, 0.08);
@@ -577,6 +577,14 @@ p:last-child {
   margin: 0;
   display: grid;
   gap: 0.65rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .marker-key {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
 }
 
 .marker-key li {
