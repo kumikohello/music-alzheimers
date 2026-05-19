@@ -249,14 +249,14 @@ a:focus-visible {
   color: var(--text-on-light);
 }
 
-/* Faint rule between major sections */
-main > section[id]:not(#intro) {
-  border-top: 1px solid rgba(242, 235, 227, 0.12);
+/* Faint rule between major sections (on the visible content block, not the wrapper) */
+#thesis.section--dark-panel {
+  border-top: 1px solid rgba(242, 235, 227, 0.18);
 }
 
-main > section[id]:not(#intro):has(.section--light),
-main > section#references {
-  border-top-color: rgba(26, 26, 31, 0.08);
+main > section[id] > .section--light,
+main > section#references.section--light {
+  border-top: 1px solid rgba(26, 26, 31, 0.14);
 }
 
 .section--divider::before {
