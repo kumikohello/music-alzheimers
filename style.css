@@ -558,10 +558,17 @@ p:last-child {
   color: var(--text-on-light-muted);
 }
 
-.brain-svg {
+.brain-figure__media {
+  display: flex;
+  justify-content: center;
+}
+
+.brain-figure__img {
   width: 100%;
-  max-width: 320px;
-  margin-inline: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid rgba(26, 26, 31, 0.08);
 }
 
 .marker-key {
